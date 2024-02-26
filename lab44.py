@@ -4,8 +4,8 @@ def dfs(graph, node, visited=None):
     visited.add(node)
     print(node)
     for neighbor in graph[node]:
-        if neighbor  not in visited:
-            print(f"bardy{neighbor}")
+        if neighbor not in visited:
+            print(f"bardy->{neighbor}")
             dfs(graph, neighbor, visited)
 graph = {
     'A': ['B', 'C'],
